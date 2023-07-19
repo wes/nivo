@@ -308,8 +308,8 @@ const InnerBarCanvas = <RawDatum extends BarDatum>({
 
                     if (enableGridX) {
                         renderGridLinesToCanvas<string | number>(ctx, {
-                            width,
-                            height,
+                            width: innerWidth,
+                            height: innerHeight,
                             scale: xScale,
                             axis: 'x',
                             values: gridXValues,
@@ -318,8 +318,8 @@ const InnerBarCanvas = <RawDatum extends BarDatum>({
 
                     if (enableGridY) {
                         renderGridLinesToCanvas<string | number>(ctx, {
-                            width,
-                            height,
+                            width: innerWidth,
+                            height: innerHeight,
                             scale: yScale,
                             axis: 'y',
                             values: gridYValues,
